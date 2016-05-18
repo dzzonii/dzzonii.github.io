@@ -40,4 +40,14 @@ $(function() {
 
 		});
 
+		// INPUTS EVENTS
+		$(".input_1 input, .textarea_1 textarea").focus(function(){
+			$(this).next("span").addClass("active");
+		});
+		$(".input_1 input, .textarea_1 textarea").blur(function(){
+			if($(this).val() === ""){
+				$(this).next("span").removeClass("active");
+			}
+		});
+
 });
