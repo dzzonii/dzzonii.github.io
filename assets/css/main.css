@@ -149,6 +149,7 @@
 		a:hover {
 			color: #ffffff;
 			border-bottom-color: transparent;
+			text-decoration: none;
 		}
 
 	strong, b {
@@ -905,18 +906,21 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #FF6382;
+    background-color: rgba(255, 255, 255, 0.075);
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
 		border-radius: 4px;
 		border: 0;
-		color: !important;
+		color: #cdcdcd;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+		font-weight: 700; /* 200 */
 		height: 2.85em;
 		line-height: 2.95em;
 		padding: 0 1.5em;
 		text-align: center;
-		text-decoration: none;
+		text-decoration: none;		
+    text-transform: uppercase;
 		white-space: nowrap;
 	}
 
@@ -925,7 +929,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #ff7c96;
+			background-color: rgba(255, 255, 255, 0.20);
 		}
 
 		input[type="submit"]:active,
@@ -933,7 +937,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #ff496e;
+			background-color: rgba(255, 255, 255, 0.40);
 		}
 
 		input[type="submit"].icon,
@@ -1053,18 +1057,6 @@
 			opacity: 0.25;
 		}
 
-		@media screen and (max-width: 480px) {
-
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"],
-			button,
-			.button {
-				padding: 0;
-			}
-
-		}
-
 /* Thumbnails */
 
 	.thumbnails {
@@ -1091,7 +1083,7 @@
 			margin: 0 0 2em 0;
 			text-align: center;
 			border-radius: 4px;
-			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.10);
 			background-color: rgba(255, 255, 255, 0.075);
 			cursor: pointer;
 			outline: 0;
@@ -1110,8 +1102,8 @@
 			}
 
 			.thumbnails a:hover {
-				background-color: rgba(255, 255, 255, 0.25);
-				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #FF6382;
+    		background-color: rgba(255, 255, 255, 0.25);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 rgba(231, 255, 231, 0.4);				
 			}
 
 		.thumbnails > div {
@@ -1396,14 +1388,20 @@
     z-index: 1; }
   .input_1 > span.active,
   .textarea_1 > span.active {
-    color: #51bf66;
+    color: #fff;
     font-size: 10px;
-    top: -16px;
+    top: -12px;
     left: 5px;
     background-color: transparent;
     padding: 5px; }
 
 .thumbnails a:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 rgba(231, 255, 231, 0.4);
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+	box-shadow: 0 0 0 1px #cecece;
+}
+
+.btn {
+	padding: 0 1.5em;
 }
