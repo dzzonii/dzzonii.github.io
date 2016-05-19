@@ -2,10 +2,39 @@
 <html>
 	<head>
 		<style>
-			
+			.flexbox-container {
+				display: -ms-flex;
+				display: -webkit-flex;
+				display: flex;
+			}
+
+			.flexbox-container > ul {
+				width: 50%;
+			}
 		</style>
 	</head>
 	<body>
-		
+		<p>Project description :</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.
+		</p>		
+		<p>Skills used :</p>
+		<div class="flexbox-container">
+			<ul class="list left">
+				<li>Web design</li>
+				<li>Front end development</li>
+				<li>Back end development</li>
+				<li>SEO</li>
+			</ul>
+			<ul class="list right">
+				<li>Web design</li>
+				<li>Front end development</li>
+				<li>Back end development</li>
+				<li>SEO</li>
+			</ul>
+		</div>
 	</body>
 </html>

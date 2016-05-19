@@ -50,10 +50,13 @@ $(function() {
 			}
 		});
 	
-			//THUMBNAIL ONCLICK CHANGES MAC BG
-			$(".thumbnails a").on("click", function () {
-				var imglink = $(this).find("img").attr("dir");
-    	$(".viewport").css("background-image", "url("+ imglink +")");
-});
+		//THUMBNAIL ONCLICK CHANGES MAC BG
+		$(".thumbnails a").on("click", function () {
+			var imglink = $(this).find("img").attr("dir");
+		$(".viewport").css("background-image", "url("+ imglink +")");
+		$('html, body').animate({
+				scrollTop: $("#main").offset().top
+		}, 2000);
+		});
 
 });
