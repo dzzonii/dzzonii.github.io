@@ -100,10 +100,8 @@
 	}
 
 	body {
-		background-color: #000;
-		background-image: url("../../images/bg.jpg");
-		background-size: cover;
-		background-attachment: fixed;
+  		background: radial-gradient(circle, rgba(0, 0, 0, 0.47) 15%, rgba(11, 11, 11, 0.76)) repeat scroll 0 0/*, url("../../images/bg.jpg") fixed*/;
+			background-size: cover;
 		background-position: top center;
 	}
 
@@ -139,7 +137,6 @@
 	a {
 		color: inherit;
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
 		-moz-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -1185,52 +1182,11 @@
 		overflow: hidden;
 	}
 
-		.poptrox-popup .closer {
-			-moz-transition: opacity 0.2s ease-in-out;
-			-webkit-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
-			transition: opacity 0.2s ease-in-out;
-			text-decoration: none;
-			position: absolute;
-			top: 1em;
-			right: 1em;
-			z-index: 2;
-			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-			white-space: nowrap;
-			text-indent: 2.5em;
-			overflow: hidden;
-			width: 2.5em;
-			height: 2.5em;
-			display: block;
-		}
-
-			.poptrox-popup .closer:before {
-				content: "";
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
+			.poptrox-popup .closer {
+				opacity: 0.5;
 			}
 
-			.poptrox-popup .closer:before {
-				display: block;
-				position: relative;
-				text-indent: 0;
-				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
-				color: #ffffff !important;
-				width: 2.5em;
-				height: 2.5em;
-				line-height: 2.5em;
-			}
-
-		.poptrox-popup:hover .closer {
-			opacity: 0.5;
-		}
-
-			.poptrox-popup:hover .closer:hover {
+			.poptrox-popup:hover .closer {
 				opacity: 1.0;
 			}
 
@@ -1268,7 +1224,7 @@
 
 	#header {
 		text-align: center;
-		padding: 6em 0 4em 0;
+		padding: 6em 0 0 0;
 	}
 
 		#header h1 {
@@ -1324,6 +1280,7 @@
 .textarea_1 {
   height: 200px;
   width: 100%;
+	border-radius: 4px;
 	border: solid 1px rgba(255, 255, 255, 0.25);
   position: relative; }
   .textarea_1 textarea {
@@ -1357,6 +1314,7 @@
 .input_1 {
   height: 50px;
   width: 100%;
+	border-radius: 4px;
 	border: solid 1px rgba(255, 255, 255, 0.25);
   position: relative; }
   .input_1 input[type="text"] {
@@ -1404,4 +1362,138 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 .btn {
 	padding: 0 1.5em;
+}
+
+.flexbox-container {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flexbox-container > div {
+	width: 50%;
+	padding: 15px;
+}
+
+.flexbox-container .left {
+	padding-left: 0;
+}
+.flexbox-container .right {
+	padding-right: 0;
+}
+
+/* MACBOOK */
+.macbook {
+  padding: 4% 6%;
+  margin: 0 auto;
+}
+
+.screen {
+  background: #000;
+  border-radius: 3% 3% 0.5% 0.5% / 5%;
+  margin: 0 auto;
+  /* for aspect ratio */
+  position: relative;
+  width: 80%;
+}
+
+.screen:before {
+  border: 2px solid #cacacc;
+  border-radius: 3% 3% 0.5% 0.5% / 5%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset, 0 0 1px 2px rgba(255, 255, 255, 0.3) inset;
+  content: "";
+  display: block;
+  /* for aspect ratio ~67:100 */
+  padding-top: 67%;
+}
+
+.screen:after {
+  content: "";
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 0.75%;
+  left: 0.5%;
+  padding-top: 1%;
+  width: 99%;
+}
+
+.viewport {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 4.3% 3.2%;
+  background: #333;
+}
+
+.base {
+  /* for aspect ratio */
+  position: relative;
+  width: 100%;
+}
+
+.base:before {
+  content: "";
+  display: block;
+  /* for aspect ratio ~33:1000*/
+  padding-top: 3.3%;
+  /* stylin */
+  background: linear-gradient(#eaeced, #edeef0 55%, #fff 55%, #8a8b8f 56%, #999ba0 61%, #4B4B4F 84%, #262627 89%, rgba(0, 0, 0, .01) 98%);
+  border-radius: 0 0 10% 10%/ 0 0 50% 50%;
+}
+
+.base::after {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) 0.5%, rgba(0, 0, 0, 0.4) 3.3%, transparent 15%, rgba(255, 255, 255, 0.8) 50%, transparent 85%, rgba(0, 0, 0, 0.4) 96.7%, rgba(255, 255, 255, 0.8) 99.5%, rgba(0, 0, 0, 0.5) 100%);
+  content: "";
+  height: 53%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.notch {
+  background: #ddd;
+  border-radius: 0 0 7% 7% / 0 0 95% 95%;
+  box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3.5%;
+  z-index: 2;
+  /* for aspect ratio */
+  position: relative;
+  width: 14%;
+}
+
+.notch:before {
+  content: "";
+  display: block;
+  /* for aspect ratio ~1:10 */
+  padding-top: 10%;
+}
+
+
+/* Screenshot Hover Scroll Additions
+-------------------------------------------------------------- */
+
+.macbook .viewport {
+  transition: background-position 5s linear;
+  background-position: 0 0;
+  background-size: 100% auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.macbook .viewport:hover {
+  background-position: 0 100%;
+}
+
+.macbook .viewport:after {
+  background: radial-gradient(circle at right bottom, transparent 75%, rgba(255, 255, 255, 0.05) 75%, transparent);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

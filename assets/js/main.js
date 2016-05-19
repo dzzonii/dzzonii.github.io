@@ -49,5 +49,11 @@ $(function() {
 				$(this).next("span").removeClass("active");
 			}
 		});
+	
+			//THUMBNAIL ONCLICK CHANGES MAC BG
+			$(".thumbnails a").on("click", function () {
+				var imglink = $(this).find("img").attr("dir");
+    	$(".viewport").css("background-image", "url("+ imglink +")");
+});
 
 });
