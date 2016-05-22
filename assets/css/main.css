@@ -99,14 +99,18 @@
 
 	}
 
-	body {
-  		background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.47) 15%, rgba(11, 11, 11, 0.76)) repeat scroll 0 0;
-  		background: -o-gradient(circle, rgba(0, 0, 0, 0.47) 15%, rgba(11, 11, 11, 0.76)) repeat scroll 0 0;
-  		background: -moz-gradient(circle, rgba(0, 0, 0, 0.47) 15%, rgba(11, 11, 11, 0.76)) repeat scroll 0 0;
-  		background: radial-gradient(circle, rgba(0, 0, 0, 0.47) 15%, rgba(11, 11, 11, 0.76)) repeat scroll 0 0;
-			background-size: cover;
-		background-position: top center;
+	body {		
+		background: linear-gradient(
+					rgba(0, 0, 0, 0.55),
+					rgba(0, 0, 0, 0.55)
+				), url(../../images/bg.jpg);
+		background-size: cover;
+		background-position: bottom center;
+		background-attachment: fixed;
 	}
+
+::-moz-selection { background: #505050; color: #fff }
+::selection { background: #505050; color: #fff }
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 			-moz-animation: none !important;
@@ -1147,6 +1151,34 @@
 
 		}
 
+		@media screen and (min-width:480px) and (max-width: 768px) {
+			
+
+			.thumbnails {
+				display: block;
+			}
+
+				.thumbnails a {
+					margin: 0 0 2em 0 !important;
+				}
+
+			.thumbnails > div {
+				display: inline-block;
+				width: 50%;
+			}
+
+			.thumbnails > div:nth-child(2), .thumbnails > div:nth-child(4) {
+				float: right;
+				display: block;
+				width: 50%;
+			}
+
+				.thumbnails > div:last-child > :last-child {
+					margin-bottom: 0 !important;
+				}
+
+		}
+
 		@media screen and (max-width: 480px) {
 
 			.thumbnails {
@@ -1196,7 +1228,7 @@
 /* Wrapper */
 
 	#wrapper {
-		max-width: 68em;
+		max-width: 78em;
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 2em;
@@ -1300,7 +1332,7 @@
     color: #9a9a9a; }
   .textarea_1 > span {
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 20px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -1312,7 +1344,7 @@
     color: #cdcdcd;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    z-index: 1; }
+    z-index: -1; }
 
 .input_1 {
   height: 50px;
@@ -1387,7 +1419,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 /* MACBOOK */
 .macbook {
-  padding: 4% 6%;
+  padding: 2% 0 4%;
   margin: 0 auto;
 }
 
