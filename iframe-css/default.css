@@ -29,8 +29,10 @@ width:150px;
 #content h1 {
 font-family: Helvetica, sans-serif;
 color:#fff;
-font-size:28px;
+font-size:22px;
+	line-height: 22px;
 margin-bottom:40px;
+	margin-top: 13px;
 text-align:right;
 }
 
@@ -51,32 +53,36 @@ padding:0;
 .skills li {
 float:right;
 clear:both;
-padding:0 15px;
 height:35px;
 line-height:35px;
+padding:0 10px;
 color:#fff;
 margin-bottom:1px;
 font-size:18px;
 }
 
-.skills .jq {
-background:#97BE0D;
+.skills .html {
+	background: #f16529;
 }
 
 .skills .css {
-background:#D84F5F;
+background:#0170ba;
 }
 
-.skills .html {
-background:#88B8E6;
+.skills .js {
+background:#d6ba32;
+}
+
+.skills .wp {
+background:#0170ba;
 }
 
 .skills .php {
-background:#BEDBE9;
+background:#6082bb;
 }
 
 .skills .sql {
-background:#EDEBEE;
+background:#e48e00;
 }
 
 
