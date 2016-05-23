@@ -13,52 +13,34 @@ font-family:Arial, Helvetica, sans-serif;
 font-size:12px;
 color:#333;
 line-height:18px;
+	overflow: hidden;
 }
 
 #content {
 	margin-top: 10px;
-	margin-left: 10px;
 	overflow: hidden;
 }
 
-.legend {
-float:left;
-width:150px;
-}
-
-#content h1 {
-font-family: Helvetica, sans-serif;
-color:#fff;
-font-size:22px;
-	line-height: 22px;
-margin-bottom:40px;
-	margin-top: 13px;
-text-align:right;
-}
-
 .skills {
-float:left;
-clear:both;
-width:100%;
+	display: table;
+	margin: 0 auto;
 }
 
 .skills ul,
 .skills li {
-display:block;
+display:inline-block;
 list-style:none;
 margin:0;
 padding:0;
 }
 
 .skills li {
-float:right;
-clear:both;
 height:35px;
 line-height:35px;
 padding:0 10px;
 color:#fff;
 margin-bottom:1px;
-font-size:18px;
+font-size:12px;
 }
 
 .skills .html {
@@ -74,7 +56,7 @@ background:#d6ba32;
 }
 
 .skills .wp {
-background:#0170ba;
+background:#999999;
 }
 
 .skills .php {
@@ -85,12 +67,15 @@ background:#6082bb;
 background:#e48e00;
 }
 
+.skills .dsn {
+	background: #669933;
+}
+
 
 #diagram {
-	margin-left: 10px;
-float:left;
-width:280px;
+width:300px;
 height:300px;
+	margin: 0 auto;
 }
 
 .get {
