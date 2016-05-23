@@ -6,14 +6,14 @@ var o = {
 		return Math.floor((Math.random()*(u-l+1))+l);
 	},
 	diagram: function(){
-		var r = Raphael('diagram', 400, 400),
+		var r = Raphael('diagram', 300, 300),
 			rad = 25,
 			defaultText = 'Skills',
 			speed = 250;
 		
-		r.circle(200, 200, 30).attr({ stroke: 'none', fill: '#193340' });
+		r.circle(150, 150, 30).attr({ stroke: 'none', fill: '#193340' });
 		
-		var title = r.text(200, 200, defaultText).attr({
+		var title = r.text(150, 150, defaultText).attr({
 			font: '12px Arial',
 			fill: '#fff'
 		}).toFront();
@@ -24,10 +24,10 @@ var o = {
 				random = o.random(91, 240),
 				a = (random-alpha) * Math.PI/180,
 				b = random * Math.PI/180,
-				sx = 200 + rad * Math.cos(b),
-				sy = 200 - rad * Math.sin(b),
-				x = 200 + rad * Math.cos(a),
-				y = 200 - rad * Math.sin(a),
+				sx = 150 + rad * Math.cos(b),
+				sy = 150 - rad * Math.sin(b),
+				x = 150 + rad * Math.cos(a),
+				y = 150 - rad * Math.sin(a),
 				path = [['M', sx, sy], ['A', rad, rad, 0, +(alpha > 180), 1, x, y]];
 			return { path: path, stroke: color }
 		}

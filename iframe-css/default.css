@@ -9,7 +9,6 @@ padding:0;
 }
 
 body {
-background:#f5f5f5;
 font-family:Arial, Helvetica, sans-serif;
 font-size:12px;
 color:#333;
@@ -17,12 +16,6 @@ line-height:18px;
 }
 
 #content {
-/*position:absolute;*/
-/*top:50%;*/
-/*left:50%;*/
-/*margin:-340px 0 0 -450px;*/
-/*width:900px;*/
-/*height:600px;*/
 	margin-top: 10px;
 	margin-left: 10px;
 	overflow: hidden;
@@ -31,13 +24,11 @@ line-height:18px;
 .legend {
 float:left;
 width:150px;
-margin-top:40px;
 }
 
 #content h1 {
-font-family:'Cabin Sketch', arial, serif;
-text-shadow:3px 3px 0 #ddd;
-color:#193340;
+font-family: Helvetica, sans-serif;
+color:#fff;
 font-size:28px;
 margin-bottom:40px;
 text-align:right;
@@ -90,9 +81,10 @@ background:#EDEBEE;
 
 
 #diagram {
+	margin-left: 10px;
 float:left;
-width:320px;
-height:400px;
+width:280px;
+height:300px;
 }
 
 .get {
