@@ -96,10 +96,6 @@
 		html, body {
 			min-width: 320px;
 		}
-
-		body {
-			background: url(../../images/bg.jpg);
-		}
 	}
 
 	body {		
@@ -781,6 +777,10 @@
 					}
 
 			@media screen and (max-width: 480px) {
+
+				body {
+					background: url(../../images/bg.jpg);
+				}
 
 				ul.actions {
 					margin: 0 0 2em 0;
