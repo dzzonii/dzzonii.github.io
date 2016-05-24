@@ -97,6 +97,9 @@
 			min-width: 320px;
 		}
 
+		body {
+			background: url(../../images/bg.jpg);
+		}
 	}
 
 	body {		
