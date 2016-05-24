@@ -780,9 +780,8 @@
 
 				body {
 					background: url(../../images/bg.jpg);
-					background-size: contain;
+					background-size: cover;
 					background-position: bottom center;
-					background-attachment: fixed
 				}
 
 				ul.actions {
