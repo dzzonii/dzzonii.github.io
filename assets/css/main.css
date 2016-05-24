@@ -917,7 +917,6 @@
 		color: #cdcdcd;
 		cursor: pointer;
 		display: inline-block;
-    font-family: "Montserrat", sans-serif;
 		font-weight: 700; /* 200 */
 		height: 2.85em;
 		line-height: 2.95em;
@@ -1337,10 +1336,9 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
+    font-size: 14px;
+		text-transform: uppercase;
     color: #cdcdcd;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -1371,10 +1369,9 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
+    font-size: 14px;
+		text-transform: uppercase;
     color: #cdcdcd;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
