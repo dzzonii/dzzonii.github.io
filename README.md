@@ -1,7 +1,7 @@
-## Lookenlisten modifcations
+# Lookenlisten modifcations
 ------------------------------------------------
-- Main navigation - Sub menu needs to be added
-- Font implementation & fixes
+- Header / Main navigation - Sub menu needs to be added
+- Font implementation & fixes (for every page)
 
 ------------------------------------------------
 ### Brand category page [example](http://www.hobo.nl/hi-fi.html)
@@ -57,3 +57,37 @@
 - Additional title and text
 - Additional store image
 - Google Map location API
+
+------------------------------------------------
+### Cart page [example](http://www.hobo.nl/checkout/cart/)
+------------------------------------------------
+- Adding Sales Booster Products section after Cart table
+- Coupon block right before Checkout
+
+------------------------------------------------
+### One step checkout (OSC) page [example](https://www.hobo.nl/onestepcheckout/)
+------------------------------------------------
+- Inputs modifications
+
+------------------------------------------------
+### About us page [example](http://www.hobo.nl/daarom-hobo-hifi)
+------------------------------------------------
+- Banner section full-width
+- Sidebar & fonts update
+- Content image & call to action button
+
+------------------------------------------------
+### Terms and Conditions (CMS) page [example](http://www.hobo.nl/algemene-voorwaarden)
+------------------------------------------------
+- Banner image change
+- Content redesign
+- Add more detailed tooltip for description terms
+- Table
+- Image under table
+- Sidebar redesign
+
+------------------------------------------------
+### 404 page [example](http://www.hobo.nl/404)
+------------------------------------------------
+- Content modification
+- Search form
