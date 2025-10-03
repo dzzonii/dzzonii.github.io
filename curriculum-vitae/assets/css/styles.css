@@ -43,7 +43,7 @@ p {
   line-height: 1.5;
 }
 .wrapper {
-  background: #42A8C0;
+  background: #358799;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
@@ -52,10 +52,10 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .sidebar-wrapper {
-  background: #42A8C0;
+  background: #358799;
   position: absolute;
   right: 0;
-  width: 240px;
+  width: 270px;
   height: 100%;
   min-height: 800px;
   color: #fff;
@@ -156,7 +156,7 @@ p {
 .main-wrapper {
   background: #fff;
   padding: 60px;
-  padding-right: 300px;
+  padding-right: 330px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
@@ -236,6 +236,7 @@ p {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 12px;
+  font-weight: 500;
 }
 .skillset .level-bar {
   height: 12px;
@@ -243,7 +244,8 @@ p {
 }
 .skillset .level-bar-inner {
   height: 12px;
-  background: #7bc2d3;
+  background: #5bb2c8;
+  width: 0;
 }
 .footer {
   padding: 30px;
